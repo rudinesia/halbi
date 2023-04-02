@@ -1,0 +1,120 @@
+
+$brand-color1: #7D3338;
+$brand-color2: #FFCC68;
+$brand-color3: #FFFFFF;
+
+// Custom Button Color
+.btn-brand-1{
+	@include button-variant($brand-color1, darken($brand-color1, 7.5%), darken($brand-color1, 10%), lighten($brand-color1,5%), lighten($brand-color1, 10%), darken($brand-color1,30%));
+}
+.btn-brand-2{
+	@include button-variant($brand-color2, darken($brand-color2, 7.5%), darken($brand-color2, 10%), lighten($brand-color2,5%), lighten($brand-color2, 10%), darken($brand-color2,30%));
+}
+
+.btn-outline-brand-1 {
+    @include button-outline-variant($brand-color1, $brand-color2, lighten($brand-color1,5%), $brand-color1);
+}
+.btn-outline-brand-2 {
+    @include button-outline-variant($brand-color2, $brand-color2, lighten($brand-color2,5%), $brand-color2);
+}
+
+// Custom Bacground Color
+.bg-brand-1{
+	background-color: $brand-color1;
+	color: white;
+}
+.bg-brand-2{
+	background-color: $brand-color2;
+	color: $brand-color1;
+}
+.bg-brand-3{
+	background-color: $brand-color3;
+	color: $brand-color1;
+}
+
+// Custom text color
+.color-brand-1{ color: $brand-color1 !important; }
+.color-brand-2{ color: $brand-color2 !important; }
+.color-brand-3{ color: $brand-color3 !important; }
+
+.decor{
+	position: absolute;
+	&.kanan{
+		right: 0;
+		top: 0;
+	}
+}
+
+body{
+	background-color: $brand-color1;
+	color: $brand-color3;
+	font-family: 'Playfair Display', $font-family-sans-serif;
+	font-weight: 400;
+	b, strong{
+		font-weight: 600;
+	}
+}
+
+.slick-dots li.slick-active button:before{
+	color: $brand-color3;
+}
+
+.section-heading{
+	color: $brand-color2;
+	font-size: 30px;
+	font-weight: 400;
+}
+
+#pengantin-nama{
+	h1{
+		color: $brand-color3;
+		font-family: 'Petit Formal Script', $font-family-sans-serif;
+		font-size: 58px;
+		font-weight: 400;
+	}
+	.decor02{
+		top: -50px;
+		right: -50px;
+	}
+	.decor03{
+		bottom: 80px;
+		left: -40px;
+	}
+}
+
+#pengantin-foto{
+}
+
+#akad-resepsi{
+	.gunungan{
+		&-kiri{
+			left: calc(-152px/2);
+			bottom: -125px;
+		}
+		&-kanan{
+			right: calc(-152px/2);
+			bottom: -100px;
+		}
+	}
+}
+
+.frame{
+	box-shadow: -5px 5px 0px $brand-color2;
+}
+
+.batik{
+	height: 41px;
+	background: linear-gradient(90deg, rgba(125, 51, 56, 0.75) 0%, rgba(125, 51, 56, 0) 48.44%, rgba(125, 51, 56, 0.75) 97.4%), url(../images/jawa/batik-pattern.png);
+}
+
+@include media-breakpoint-up(md){
+	
+}
+
+@include media-breakpoint-up(lg){
+
+}
+
+@include media-breakpoint-up(xl){
+
+}

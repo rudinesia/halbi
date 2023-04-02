@@ -1,0 +1,154 @@
+
+$brand-color1: #1D3154;
+$brand-color2: #E7BB71;
+$brand-color3: #FFFFFF;
+
+// Custom Button Color
+.btn-brand-1{
+	@include button-variant($brand-color1, darken($brand-color1, 7.5%), darken($brand-color1, 10%), lighten($brand-color1,5%), lighten($brand-color1, 10%), darken($brand-color1,30%));
+}
+.btn-brand-2{
+	@include button-variant($brand-color2, darken($brand-color2, 7.5%), darken($brand-color2, 10%), lighten($brand-color2,5%), lighten($brand-color2, 10%), darken($brand-color2,30%));
+}
+
+.btn-outline-brand-1 {
+    @include button-outline-variant($brand-color1, $brand-color2, lighten($brand-color1,5%), $brand-color1);
+}
+.btn-outline-brand-2 {
+    @include button-outline-variant($brand-color2, $brand-color2, lighten($brand-color2,5%), $brand-color2);
+}
+
+// Custom Bacground Color
+.bg-brand-1{
+	background-color: $brand-color1;
+	color: white;
+}
+.bg-brand-2{
+	background-color: $brand-color2;
+	color: $brand-color1;
+}
+.bg-brand-3{
+	background-color: $brand-color3;
+	color: $brand-color1;
+}
+
+// Custom text color
+.color-brand-1{ color: $brand-color1; }
+.color-brand-2{ color: $brand-color2; }
+.color-brand-3{ color: $brand-color3; }
+
+// Decoration
+.decor{
+	position: absolute;
+	&.kanan{
+		right: 0;
+		top: 0;
+	}
+}
+
+// Clip Path Foto Pengantin
+.clip-foto{ clip-path: url(#clip-foto); }
+
+body{
+	background-color: $brand-color1;
+	color: $brand-color3;
+	font-family: 'Source Sans Pro', $font-family-sans-serif;
+	font-weight: 400;
+	b, strong{
+		font-weight: 600;
+	}
+}
+
+.slick-dots li.slick-active button:before{
+	color: $brand-color2;
+}
+
+.section-heading{
+	color: $brand-color2;
+	font-weight: 300;
+}
+
+#penerima{
+	.decor01{
+		top: -47%;
+		left: 50%;
+		margin-left: calc(-465px/2);
+	}
+}
+
+#pengantin-nama{
+	h1{
+		color: $brand-color2;
+		font-family: 'Rouge Script', $font-family-sans-serif;
+		font-size: 96px;
+		font-weight: 400;
+		transform: rotate(-7.8deg);
+		position: relative;
+		z-index: 2;
+	}
+	.frame-nama{
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		margin-left: calc(-300px/2);
+		margin-top: calc(-300px/2);
+		z-index: 1;
+	}
+	.decor02{
+		left: -16px;
+		bottom: 0;
+	}
+	.decor03{
+		right: -27px;
+		bottom: 0;
+	}
+}
+
+#pengantin-foto{
+	.decor04{
+		left: -82px;
+		bottom: -70px;
+	}
+}
+
+#akad-resepsi{
+	.decor05{
+		left: -110px;
+		bottom: -132px;
+	}
+	.decor06{
+		right: -32px;
+		top: 28px;
+	}
+}
+
+#our-memories{
+	.decor04{
+		right: -76px;
+		bottom: -20px;
+		z-index: 1;
+	}
+}
+
+#quote{
+	.decor04{
+		left: -25%;
+		bottom: -23%;
+		&.flipX{
+			left: auto;
+			right: -25%;
+		}
+	}
+}
+
+@include media-breakpoint-up(md){
+	
+}
+
+@include media-breakpoint-up(lg){
+
+}
+
+@include media-breakpoint-up(xl){
+
+}

@@ -1,0 +1,59 @@
+
+.f-48{ font-size: 48px; }
+.f-36{ font-size: 36px; }
+.f-24{ font-size: 24px; }
+.f-18{ font-size: 18px; }
+.f-14{ font-size: 14px; }
+.f-12{ font-size: 12px; line-height: 1.5em; }
+.relative{ position: relative; }
+
+body{
+	font-size: 18px;
+	line-height: 1.62em;
+	overflow-x: hidden;
+}
+
+.relative{
+	position: relative;
+}
+
+.z-2{ z-index: 2; }
+
+.flipX{ transform: scaleX(-1); }
+.flipY{ transform: scaleY(-1); }
+
+.section-heading{
+	font-size: 30px;
+	font-weight: 700;
+}
+
+.slick-dots li button:before{
+	font-size: 14px;
+}
+
+.slider2{
+	.card{
+		position: relative;
+		padding-top: 100%;
+		.card-body{
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+		}
+	}
+}
+
+
+@include media-breakpoint-up(md){
+	
+}
+
+@include media-breakpoint-up(lg){
+
+}
+
+@include media-breakpoint-up(xl){
+
+}
